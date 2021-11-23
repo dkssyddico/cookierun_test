@@ -1,8 +1,25 @@
 {
-  "data": [
+  "list": [
     {
       "question": "질문 1",
-      "answer": []
+      "answer": [
+        { "index": 0, "option": "a", "type": [0, 1, 2] },
+        { "index": 0, "option": "b", "type": [3, 4, 5] }
+      ]
+    },
+    {
+      "question": "질문 2",
+      "answer": [
+        { "index": 1, "option": "a", "type": [0, 2, 4] },
+        { "index": 1, "option": "b", "type": [1, 3, 5] }
+      ]
+    },
+    {
+      "question": "질문 3",
+      "answer": [
+        { "index": 2, "option": "a", "type": [1, 3, 4] },
+        { "index": 2, "option": "b", "type": [0, 2, 5] }
+      ]
     }
   ]
 }
