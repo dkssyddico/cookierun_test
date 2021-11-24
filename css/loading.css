@@ -1,0 +1,22 @@
+#loading {
+  height: 100%;
+}
+
+.loading__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.loading__container .loading__title {
+  color: var(--color-light-white);
+}
+
+.loading___image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px var(--color-light-white) solid;
+}

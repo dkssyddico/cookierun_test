@@ -17,11 +17,14 @@
   <body>
     <section id="home">
       <div class="home__container">
-        <h1>내가 쿠키가 된다면?</h1>
+        <h1>쿠키 테스트</h1>
+        <div class="home__imgContainer">
+          <img src="assets/images/main/0.png" alt="mini cookie" class="home___image" />
+        </div>
         <p>
           어느 날, 당신은 마녀의 오븐에서 쿠키로 다시 태어나게 되었습니다.
-          <br />앞으로 선택에 따라 당신이 어떤 쿠키로 구워질지 정해지게 됩니다. <br />부디, 최선을
-          다해 답변해주세요.
+          <br />이제 당신의 선택에 따라 어떤 쿠키가 될지 정해지게 됩니다. <br />부디, 최선을 다해
+          답변해주세요.
         </p>
         <button class="home__startBtn">시작하기</button>
       </div>
@@ -29,7 +32,11 @@
     <section id="survey" class="hidden">
       <div class="survey__container">
         <div class="survey__progress">
-          <div class="survey__progressBar"></div>
+          <div class="survey__progressBar">
+            <div class="survey__imgContainer">
+              <img src="assets/images/question/question.png" alt="question" class="survey__image" />
+            </div>
+          </div>
         </div>
         <div class="survey__questionContainer"></div>
         <div class="survey__answerContainer"></div>
@@ -37,12 +44,22 @@
     </section>
     <section id="result" class="hidden">
       <div class="result__container">
-        <h1>나랑 닮은 쿠키는?</h1>
         <div class="result__cookie"></div>
-        <div class="result__description"></div>
+        <div class="result__imgContainer">
+          <img alt="cookie" class="result__image" />
+        </div>
+        <div class="result__script"></div>
         <div class="result__btnContainer">
           <button class="result__replayBtn">Replay</button>
           <button class="result__shareBtn">Share</button>
+        </div>
+      </div>
+    </section>
+    <section id="loading" class="hidden">
+      <div class="loading__container">
+        <h1 class="loading__title">쿠키를 데려오고 있어요...</h1>
+        <div class="loading__imgContainer">
+          <img src="assets/images/main/0.png" alt="mini cookie" class="loading___image" />
         </div>
       </div>
     </section>

@@ -2,91 +2,43 @@
   "item": [
     {
       "type": 0,
-      "cookie": "바다요정쿠키",
-      "description": "당신은 바다요정쿠키입니다.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "cookie": "바다요정 쿠키",
+      "script": "흘러넘치는 마음을 막을 수는 없어요."
     },
     {
       "type": 1,
-      "cookie": "블랙레이즌맛쿠키",
-      "description": "당신은 블랙레이즌맛쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "cookie": "블랙레이즌맛 쿠키",
+      "script": "깜깜한 어둠 속도 상관없어! 난 전부 보이니까"
     },
     {
       "type": 2,
-      "cookie": "샤벳상어맛쿠키",
-      "description": "당신은 샤벳상어맛쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "cookie": "샤벳상어맛 쿠키",
+      "script": "Oo0o0o0oo0o0o0oo~"
     },
     {
       "type": 3,
-      "cookie": "에스프레소맛쿠키",
-      "description": "당신은 에스프레소맛쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "cookie": "에스프레소맛 쿠키",
+      "script": "바쁜 저를 이리 불러주시니 몸둘 바를 모르겠군요~"
     },
     {
       "type": 4,
-      "cookie": "딸기크레페맛쿠키",
-      "description": "당신은 딸기크레페맛쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "cookie": "딸기크레페맛 쿠키",
+      "script": "너는 쿠키가 어떻게 만들어지는지 알아~?"
     },
     {
       "type": 5,
-      "cookie": "다크초코맛쿠키",
-      "description": "당신은 다크초코맛쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "cookie": "다크초코 쿠키",
+      "script": "그저...영웅이 되고 싶었을 뿐..."
     },
     {
       "type": 6,
       "cookie": "용감한 쿠키",
-      "description": "당신은 용감한 쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "script": "우옷~! 함께 가는 거야!"
     },
     {
       "type": 7,
       "cookie": "퓨어바닐라맛 쿠키",
-      "description": "당신은 퓨어바닐라맛 쿠키.",
-      "related": [
-        {
-          "cookie": "퓨어바닐라쿠키"
-        },
-        { "cookie": "퓨어바닐라쿠키" }
-      ]
+      "script": "진심은 언제나 통하기 마련이에요."
     }
   ]
 }

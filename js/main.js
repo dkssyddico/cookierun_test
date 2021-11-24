@@ -8,35 +8,42 @@ const answerContainer = document.querySelector('.survey__answerContainer');
 const startBtn = document.querySelector('.home__startBtn');
 const replayBtn = document.querySelector('.result__replayBtn');
 const cookie = document.querySelector('.result__cookie');
-const description = document.querySelector('.result__description');
+const script = document.querySelector('.result__script');
 const progressBar = document.querySelector('.survey__progressBar');
+const resultImage = document.querySelector('.result__image');
+
+const loading = document.getElementById('loading');
 
 let lastIndex = 9;
 let choice = [0, 0, 0, 0, 0, 0, 0, 0];
 
 const calculateResult = (choice) => {
-  console.log(choice);
   return choice.indexOf(Math.max(...choice));
 };
 
 const showResult = async (index) => {
   let response = await fetch('data/result.json');
   let { item } = await response.json();
+  resultImage.src = `assets/images/answer/${index}.png`;
   cookie.innerHTML = `<p>${item[index].cookie}</p>`;
-  description.innerHTML = `<p>${item[index].description}</p>`;
+  script.innerHTML = `<p>"${item[index].script}"</p>`;
+  result.classList.remove('hidden');
+  result.classList.add('fadeIn');
 };
 
 const getResult = () => {
   let finalIndex = calculateResult(choice);
-  console.log(finalIndex);
   showResult(finalIndex);
-  result.classList.remove('hidden');
 };
 
 const goNext = (index) => {
   if (index === lastIndex) {
     survey.classList.add('hidden');
-    setTimeout(() => getResult(), 2000);
+    loading.classList.remove('hidden');
+    setTimeout(() => {
+      loading.classList.add('hidden');
+      getResult();
+    }, 2000);
   } else {
     getQuestion(index);
     progressBar.style.width = ((index + 1) / lastIndex) * 100 + '%';
@@ -46,6 +53,7 @@ const goNext = (index) => {
 const handleStartBtnClick = () => {
   home.classList.add('hidden');
   survey.classList.remove('hidden');
+  survey.classList.add('fadeIn');
   goNext(0);
 };
 
@@ -69,7 +77,6 @@ const addType = async (index, option) => {
   for (let i = 0; i < type.length; i++) {
     choice[type[i]] += 1;
   }
-  console.log(choice);
 };
 
 const handleAnswerClick = (event) => {
@@ -81,7 +88,6 @@ const handleAnswerClick = (event) => {
 };
 
 const handleReplayClick = () => {
-  console.log('replay!');
   choice = [0, 0, 0, 0, 0, 0, 0, 0];
   survey.classList.remove('hidden');
   result.classList.add('hidden');
@@ -90,3 +96,33 @@ const handleReplayClick = () => {
 
 answerContainer.addEventListener('click', handleAnswerClick);
 replayBtn.addEventListener('click', handleReplayClick);
+
+const homeImage = document.querySelector('.home___image');
+const loadingImage = document.querySelector('.loading___image');
+
+function homeImgChange() {
+  let start = 1;
+  setInterval(() => {
+    if (start > 6) {
+      start = 0;
+    }
+    homeImage.src = `assets/images/main/${start++}.png`;
+  }, 2000);
+}
+
+function loadingImgChange() {
+  let start = 1;
+  setInterval(() => {
+    if (start > 6) {
+      start = 0;
+    }
+    loadingImage.src = `assets/images/main/${start++}.png`;
+  }, 1000);
+}
+
+function init() {
+  homeImgChange();
+  loadingImgChange();
+}
+
+init();

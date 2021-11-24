@@ -1,5 +1,29 @@
+#result {
+  transition: all 1s;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .result__container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.result__cookie {
+  font-size: 28px;
+  color: var(--color-light-white);
+  font-weight: 500;
+}
+
+.result__script {
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-light-white);
+}
+
+.result__image {
+  width: 150px;
 }
