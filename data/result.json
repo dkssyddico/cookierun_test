@@ -1,0 +1,70 @@
+{
+  "item": [
+    {
+      "type": 0,
+      "cookie": "바다요정쿠키",
+      "description": "당신은 바다요정쿠키입니다.",
+      "related": [
+        {
+          "cookie": "퓨어바닐라쿠키"
+        },
+        { "cookie": "퓨어바닐라쿠키" }
+      ]
+    },
+    {
+      "type": 1,
+      "cookie": "뱀파이어맛쿠키",
+      "description": "당신은 뱀파이어맛쿠키.",
+      "related": [
+        {
+          "cookie": "퓨어바닐라쿠키"
+        },
+        { "cookie": "퓨어바닐라쿠키" }
+      ]
+    },
+    {
+      "type": 2,
+      "cookie": "딸기크레페맛쿠키",
+      "description": "당신은 딸기크레페맛쿠키.",
+      "related": [
+        {
+          "cookie": "퓨어바닐라쿠키"
+        },
+        { "cookie": "퓨어바닐라쿠키" }
+      ]
+    },
+    {
+      "type": 3,
+      "cookie": "퓨어바닐라맛쿠키",
+      "description": "당신은 퓨어바닐라맛쿠키.",
+      "related": [
+        {
+          "cookie": "퓨어바닐라쿠키"
+        },
+        { "cookie": "퓨어바닐라쿠키" }
+      ]
+    },
+    {
+      "type": 4,
+      "cookie": "블렉레이즌맛쿠키",
+      "description": "당신은 블렉레이즌맛쿠키.",
+      "related": [
+        {
+          "cookie": "퓨어바닐라쿠키"
+        },
+        { "cookie": "퓨어바닐라쿠키" }
+      ]
+    },
+    {
+      "type": 5,
+      "cookie": "라떼맛쿠키",
+      "description": "당신은 라떼맛쿠키.",
+      "related": [
+        {
+          "cookie": "퓨어바닐라쿠키"
+        },
+        { "cookie": "퓨어바닐라쿠키" }
+      ]
+    }
+  ]
+}

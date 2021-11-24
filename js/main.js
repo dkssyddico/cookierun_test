@@ -7,6 +7,8 @@ const questionContainer = document.querySelector('.survey__questionContainer');
 const answerContainer = document.querySelector('.survey__answerContainer');
 const startBtn = document.querySelector('.main__startBtn');
 const replayBtn = document.querySelector('.result__replayBtn');
+const cookie = document.querySelector('.result__cookie');
+const description = document.querySelector('.result__description');
 
 let lastIndex = 3;
 let choice = [0, 0, 0, 0, 0, 0];
@@ -15,8 +17,11 @@ const calculateResult = (choice) => {
   return choice.indexOf(Math.max(...choice));
 };
 
-const showResult = (index) => {
-  console.log(index);
+const showResult = async (index) => {
+  let response = await fetch('data/result.json');
+  let { item } = await response.json();
+  cookie.innerHTML = `<p>${item[index].cookie}</p>`;
+  description.innerHTML = `<p>${item[index].description}</p>`;
 };
 
 const getResult = () => {
