@@ -1,0 +1,25 @@
+#survey {
+}
+
+#survey .hidden {
+  display: none;
+}
+
+.survey__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.survey__progress {
+  height: 1rem;
+  width: 80%;
+  background-color: plum;
+  border-radius: 4px;
+}
+
+.survey__progressBar {
+  height: 100%;
+  background-color: rebeccapurple;
+  border-radius: 4px;
+}

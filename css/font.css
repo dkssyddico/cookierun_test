@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'cookieRun';
+  src: url('../assets/font/CookieRun\ Regular.otf');
+}
+
+@font-face {
+  font-family: 'cookieRun';
+  src: url('../assets/font/CookieRun\ Bold.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'cookieRun';
+  src: url('../assets/font/CookieRun\ Black.otf');
+  font-weight: 700;
+}

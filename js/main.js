@@ -1,19 +1,21 @@
 'use strict';
 
-const main = document.getElementById('main');
+const home = document.getElementById('home');
 const survey = document.getElementById('survey');
 const result = document.getElementById('result');
 const questionContainer = document.querySelector('.survey__questionContainer');
 const answerContainer = document.querySelector('.survey__answerContainer');
-const startBtn = document.querySelector('.main__startBtn');
+const startBtn = document.querySelector('.home__startBtn');
 const replayBtn = document.querySelector('.result__replayBtn');
 const cookie = document.querySelector('.result__cookie');
 const description = document.querySelector('.result__description');
+const progressBar = document.querySelector('.survey__progressBar');
 
-let lastIndex = 3;
-let choice = [0, 0, 0, 0, 0, 0];
+let lastIndex = 9;
+let choice = [0, 0, 0, 0, 0, 0, 0, 0];
 
 const calculateResult = (choice) => {
+  console.log(choice);
   return choice.indexOf(Math.max(...choice));
 };
 
@@ -26,6 +28,7 @@ const showResult = async (index) => {
 
 const getResult = () => {
   let finalIndex = calculateResult(choice);
+  console.log(finalIndex);
   showResult(finalIndex);
   result.classList.remove('hidden');
 };
@@ -36,11 +39,12 @@ const goNext = (index) => {
     setTimeout(() => getResult(), 2000);
   } else {
     getQuestion(index);
+    progressBar.style.width = ((index + 1) / lastIndex) * 100 + '%';
   }
 };
 
 const handleStartBtnClick = () => {
-  main.classList.add('hidden');
+  home.classList.add('hidden');
   survey.classList.remove('hidden');
   goNext(0);
 };
@@ -53,7 +57,7 @@ async function getQuestion(index) {
   questionContainer.innerHTML = `<p class="survey__question">${list[index].question}</p>`;
   answerContainer.innerHTML = list[index].answer
     .map((a) => {
-      return `<p data-index=${a.index} data-option=${a.option} class="survey__answer">${a.option}</p>`;
+      return `<p data-index=${a.index} data-option=${a.option} class="survey__answer">${a.text}</p>`;
     })
     .join('');
 }
@@ -65,6 +69,7 @@ const addType = async (index, option) => {
   for (let i = 0; i < type.length; i++) {
     choice[type[i]] += 1;
   }
+  console.log(choice);
 };
 
 const handleAnswerClick = (event) => {
@@ -77,7 +82,7 @@ const handleAnswerClick = (event) => {
 
 const handleReplayClick = () => {
   console.log('replay!');
-  choice = [0, 0, 0, 0, 0, 0];
+  choice = [0, 0, 0, 0, 0, 0, 0, 0];
   survey.classList.remove('hidden');
   result.classList.add('hidden');
   goNext(0);

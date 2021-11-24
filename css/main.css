@@ -1,3 +1,29 @@
+@import './normalize.css';
+@import './font.css';
+
+@import './home.css';
+@import './survey.css';
+@import './result.css';
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'cookieRun';
+  padding-top: 3rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  padding: 3rem 0;
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
 .hidden {
   display: none;
 }

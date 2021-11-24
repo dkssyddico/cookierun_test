@@ -1,24 +1,126 @@
 {
   "list": [
     {
-      "question": "질문 1",
+      "question": "친구와 약속이 있을 때 나는?",
       "answer": [
-        { "index": 0, "option": "a", "type": [0, 1, 2] },
-        { "index": 0, "option": "b", "type": [3, 4, 5] }
+        { "index": 0, "option": "a", "text": "미리 미리 준비하는 스타일", "type": [0, 1, 3, 5, 7] },
+        { "index": 0, "option": "b", "text": "느긋 느긋 준비하는 스타일", "type": [2, 4, 6] }
       ]
     },
     {
-      "question": "질문 2",
+      "question": "신호등이 빨간 불 되기 10초 전!",
       "answer": [
-        { "index": 1, "option": "a", "type": [0, 2, 4] },
-        { "index": 1, "option": "b", "type": [1, 3, 5] }
+        {
+          "index": 1,
+          "option": "a",
+          "text": "충분히 건널 수 있어! 전속력으로 뛴다.",
+          "type": [1, 4, 5, 6]
+        },
+        { "index": 1, "option": "b", "text": "다음 신호를 기다릴래", "type": [0, 2, 3, 7] }
       ]
     },
     {
-      "question": "질문 3",
+      "question": "친구가 날 섭섭하게 한다면",
       "answer": [
-        { "index": 2, "option": "a", "type": [1, 3, 4] },
-        { "index": 2, "option": "b", "type": [0, 2, 5] }
+        {
+          "index": 2,
+          "option": "a",
+          "text": "잘 모르고 그랬을꺼야.. 넘길래",
+          "type": [0, 2, 5, 7]
+        },
+        {
+          "index": 2,
+          "option": "b",
+          "text": "앙금을 놔두고 싶지 않아! 바로 말한다",
+          "type": [1, 3, 4, 6]
+        }
+      ]
+    },
+    {
+      "question": "책을 읽다가 궁금한게 생겼다!",
+      "answer": [
+        {
+          "index": 3,
+          "option": "a",
+          "text": "이해할 때까지 찾아본다.",
+          "type": [0, 1, 3, 7]
+        },
+        { "index": 3, "option": "b", "text": "다음에 또 나오겠지! 넘긴다.", "type": [2, 4, 5, 7] }
+      ]
+    },
+    {
+      "question": "주말에 보통 나는",
+      "answer": [
+        {
+          "index": 4,
+          "option": "a",
+          "text": "친구들이랑 노는게 좋아!",
+          "type": [1, 2, 4, 6, 7]
+        },
+        { "index": 4, "option": "b", "text": "혼자 느긋하게 보내는게 좋아!", "type": [0, 3, 5] }
+      ]
+    },
+    {
+      "question": "처음 만나는 사람들이 많은 자리에서",
+      "answer": [
+        {
+          "index": 5,
+          "option": "a",
+          "text": "자신있게 다른 사람들에게 말을 건다.",
+          "type": [1, 3, 4, 6, 7]
+        },
+        { "index": 5, "option": "b", "text": "벽으로 가까이 간다.", "type": [0, 2, 5] }
+      ]
+    },
+    {
+      "question": "다음날 중요한 일이 있을 때",
+      "answer": [
+        {
+          "index": 6,
+          "option": "a",
+          "text": "푹 자고 다음날을 대비한다.",
+          "type": [2, 3, 4, 7]
+        },
+        {
+          "index": 6,
+          "option": "b",
+          "text": "기대 혹은 불안으로 잠을 설친다.",
+          "type": [0, 1, 5, 6]
+        }
+      ]
+    },
+    {
+      "question": "친구들과 만날 때",
+      "answer": [
+        {
+          "index": 7,
+          "option": "a",
+          "text": "나만 믿어! 주도적으로 여러가지를 정하는 편!",
+          "type": [1, 3, 5, 6]
+        },
+        {
+          "index": 7,
+          "option": "b",
+          "text": "친구들이 말하는 대로 따라가는 편",
+          "type": [0, 2, 4, 7]
+        }
+      ]
+    },
+    {
+      "question": "우울한 일이 생기면",
+      "answer": [
+        {
+          "index": 8,
+          "option": "a",
+          "text": "위로 받고 싶어.. 친구들에게 털어놓을래..",
+          "type": [2, 4, 6]
+        },
+        {
+          "index": 8,
+          "option": "b",
+          "text": "혼자 참아볼래..",
+          "type": [0, 1, 3, 5, 7]
+        }
       ]
     }
   ]
