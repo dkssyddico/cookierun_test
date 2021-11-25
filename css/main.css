@@ -79,3 +79,13 @@ button {
 .fadeOut {
   animation: fadeOut 1s;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  section {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
