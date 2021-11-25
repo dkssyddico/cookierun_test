@@ -46,6 +46,7 @@ button {
   background-color: var(--color-yellow);
   border: none;
   border: 2px black solid;
+  color: black;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 3px 0px, rgba(60, 64, 67, 0.15) 0px 2px 4px 2px;
 }
 
