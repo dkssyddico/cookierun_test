@@ -27,8 +27,10 @@ const showResult = async (index) => {
   resultImage.src = `assets/images/answer/${index}.png`;
   cookie.innerHTML = `<p>${item[index].cookie}</p>`;
   script.innerHTML = `<p>"${item[index].script}"</p>`;
-  result.classList.remove('hidden');
-  result.classList.add('fadeIn');
+  setTimeout(() => {
+    result.classList.remove('hidden');
+    result.classList.add('fadeIn');
+  }, 3000);
 };
 
 const getResult = () => {
@@ -41,10 +43,10 @@ const goNext = (index) => {
     survey.classList.add('hidden');
     loading.classList.remove('hidden');
     loading.classList.add('fadeIn');
+    getResult();
     setTimeout(() => {
       loading.classList.add('hidden');
-      getResult();
-    }, 2000);
+    }, 3000);
   } else {
     getQuestion(index);
     progressBar.style.width = ((index + 1) / lastIndex) * 100 + '%';

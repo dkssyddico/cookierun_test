@@ -3,6 +3,7 @@
 }
 
 .survey__container {
+  padding: 1rem 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@
 
 .survey__progress {
   height: 1rem;
-  width: 80%;
+  width: 70%;
   background-color: var(--color-light-white);
   border-radius: 4px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,7 +28,7 @@
 
 .survey__imgContainer {
   position: absolute;
-  right: -1rem;
+  right: -2rem;
   top: -1rem;
 }
 
