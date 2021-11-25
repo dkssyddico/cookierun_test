@@ -27,7 +27,7 @@ h1 {
 
 section {
   padding: 2.5rem 0;
-  width: 40%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   background-color: var(--color-brown);
@@ -41,9 +41,11 @@ p {
 
 button {
   padding: 0.6rem 1rem;
+  margin: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--color-yellow);
   border: none;
+  border: 2px black solid;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 3px 0px, rgba(60, 64, 67, 0.15) 0px 2px 4px 2px;
 }
 
@@ -70,9 +72,9 @@ button {
 }
 
 .fadeIn {
-  animation: fadeIn 0.5s;
+  animation: fadeIn 1s;
 }
 
 .fadeOut {
-  animation: fadeOut 0.3s;
+  animation: fadeOut 1s;
 }

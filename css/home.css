@@ -1,11 +1,14 @@
 #home {
-  margin: 0 auto;
   transition: all 0.3s ease-in-out;
   color: var(--color-light-white);
   text-align: center;
 }
 
-#home .home__container {
+#home .hidden {
+  display: none;
+}
+
+.home__container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -13,13 +16,11 @@
   justify-content: space-between;
 }
 
-#home .hidden {
-  display: none;
+.home__container p {
+  font-size: 24px;
 }
 
 .home___image {
-  width: 120px;
-  height: 120px;
   border-radius: 50%;
   border: var(--color-light-white) 3px solid;
 }

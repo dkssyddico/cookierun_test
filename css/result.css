@@ -25,5 +25,5 @@
 }
 
 .result__image {
-  width: 150px;
+  max-width: 200px;
 }

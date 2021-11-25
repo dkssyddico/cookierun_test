@@ -40,6 +40,7 @@ const goNext = (index) => {
   if (index === lastIndex) {
     survey.classList.add('hidden');
     loading.classList.remove('hidden');
+    loading.classList.add('fadeIn');
     setTimeout(() => {
       loading.classList.add('hidden');
       getResult();
@@ -51,15 +52,20 @@ const goNext = (index) => {
 };
 
 const handleStartBtnClick = () => {
-  home.classList.add('hidden');
-  survey.classList.remove('hidden');
-  survey.classList.add('fadeIn');
+  home.classList.add('fadeOut');
+  setTimeout(() => {
+    home.classList.add('hidden');
+    survey.classList.remove('hidden');
+    survey.classList.add('fadeIn');
+  }, 450);
+  setTimeout(() => {}, 1000);
   goNext(0);
 };
 
 startBtn.addEventListener('click', handleStartBtnClick);
 
 async function getQuestion(index) {
+  answerContainer.classList.remove('fadeOut');
   let response = await fetch('data/question.json');
   let { list } = await response.json();
   questionContainer.innerHTML = `<p class="survey__question">${list[index].question}</p>`;
@@ -80,9 +86,12 @@ const addType = async (index, option) => {
 };
 
 const handleAnswerClick = (event) => {
+  answerContainer.classList.add('fadeOut');
   let { index, option } = event.target.dataset;
   if (index) {
-    goNext(parseInt(index) + 1);
+    setTimeout(() => {
+      goNext(parseInt(index) + 1);
+    }, 1000);
     addType(parseInt(index), option);
   }
 };
