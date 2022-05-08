@@ -54,7 +54,6 @@ const goNext = (index) => {
 };
 
 const handleStartBtnClick = () => {
-  home.classList.add('fadeOut');
   setTimeout(() => {
     home.classList.add('hidden');
     survey.classList.remove('hidden');
@@ -67,7 +66,6 @@ const handleStartBtnClick = () => {
 startBtn.addEventListener('click', handleStartBtnClick);
 
 async function getQuestion(index) {
-  answerContainer.classList.remove('fadeOut');
   let response = await fetch('data/question.json');
   let { list } = await response.json();
   questionContainer.innerHTML = `<p class="survey__question">${list[index].question}</p>`;
@@ -88,7 +86,6 @@ const addType = async (index, option) => {
 };
 
 const handleAnswerClick = (event) => {
-  answerContainer.classList.add('fadeOut');
   let { index, option } = event.target.dataset;
   if (index) {
     setTimeout(() => {
