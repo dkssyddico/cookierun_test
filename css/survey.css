@@ -48,7 +48,7 @@
 .survey__question {
   width: 100%;
   padding: 10px 12px;
-  font-size: 22px;
+  font-size: 1.5rem;
   color: var(--color-light-white);
   font-weight: 500;
 }
@@ -63,10 +63,11 @@
 
 .survey__answer {
   width: 100%;
-  background-color: var(--color-light-white);
-  color: var(--color-brown);
   padding: 10px 12px;
   margin-top: 1rem;
+  font-size: 1rem;
+  background-color: var(--color-light-white);
+  color: var(--color-brown);
   border: 2px black solid;
   border-radius: 16px;
   cursor: pointer;

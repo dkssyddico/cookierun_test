@@ -12,6 +12,7 @@
 
 .loading__container .loading__title {
   color: var(--color-light-white);
+  font-size: 1.5rem;
 }
 
 .loading___image {
