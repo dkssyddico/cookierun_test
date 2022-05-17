@@ -8,6 +8,9 @@
 
 # Preview
 
+![쿠키런테스트](https://user-images.githubusercontent.com/72083761/168723583-575e9837-8440-4863-9ffb-b4aa0f0f7fc8.gif)
+
+
 # 사용 기술
 
 `html`,`css`,`JavaScript`
